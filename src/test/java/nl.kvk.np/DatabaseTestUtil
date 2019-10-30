@@ -1,0 +1,23 @@
+package nl.kvk.np;
+
+public class DatabaseTestUtil {
+
+    private Collection<Menusistema> listamenus = new LinkedList<>();
+
+    private Menusistema menu = new Menusistema();
+
+    private String nombreBuscar = null;
+
+    private static final EntityManager entityManager;
+
+    static {
+        entityManager = Persistence.createEntityManagerFactory("persoon-db-test").
+                createEntityManager();
+    }
+
+    public static EntityManager getEntityManager() {
+        return entityManager;
+    }
+
+
+}

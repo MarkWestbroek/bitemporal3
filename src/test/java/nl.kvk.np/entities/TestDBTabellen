@@ -1,0 +1,17 @@
+package nl.kvk.np.entities;
+
+
+@RunWith(MockitoJUnitRunner.class)
+public class TestDBTabellen {
+
+    DatabaseTestUtuil databaseTestUtuil;
+
+    @Setup
+    public void initDB() {
+        databaseTestUtuil = new DatabaseTestUtil();
+
+
+
+    }
+
+}
