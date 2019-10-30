@@ -2,18 +2,18 @@ package nl.kvk.bitemporal3;
 
 //import java.lang.annotation.*;
 
-public class Entiteit
+public class EntiteitBaseclass
 {
     Entiteitgegevensobject gegevens;
 }
 
-public class Entiteitgegevensobject
+public class EntiteitgegevensobjectBaseclass
 {
 }
 
 @Entiteit (identificatiekolomnaam = "vestigingnummer")
 @Tabel (naam = "Vestigingen")
-public class Vestiging extends Entiteit{
+public class Vestiging extends EntiteitBaseclass{
 
     @Identificatiekolom(naam = "vestigingnummer")
     String vestigingnummer;
@@ -22,8 +22,8 @@ public class Vestiging extends Entiteit{
     Vestiginggegevens vestiginggegevens;
 }
 
-@Entiteitgegevensobject(entiteit = "Vestiging")
-public class Vestiginggegevens
+@Entiteitgegevensobject (entiteit = "Vestiging")
+public class Vestiginggegevens extends EntiteitgegevensobjectBaseclass
 {
 
 
