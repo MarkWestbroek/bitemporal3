@@ -35,8 +35,7 @@ public class Registratie
     String gebeurtenisnummer;
 }
 
-
-public abstract class MaterieelObject
+public abstract class MaterieelObject extends FormeelObject
 {
     Aanvang aanvang;
     Einde einde;
@@ -65,6 +64,7 @@ public class EntiteitBaseclass extends FormeelObject
     Entiteitgegevensobject gegevens;
 }
 
+// nodig? kan formeel of materieel zijn...
 public class EntiteitgegevensobjectBaseclass
 {
 }
