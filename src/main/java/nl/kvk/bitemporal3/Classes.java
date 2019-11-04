@@ -4,7 +4,11 @@ package nl.kvk.bitemporal3;
 
 import java.time.*;
 
-public abstract class FormeelObject
+public astract class Gegevensobject
+{
+}
+
+public abstract class FormeelObject extends Gegevensobject
 {
     enum FormeelObjectType{Registratie, Correctie};
     FormeelObjectType type; //het type
@@ -59,9 +63,9 @@ public class DatumIncompleet
 }
 
 
-public class EntiteitBaseclass extends FormeelObject
+public class EntiteitBaseclass extends Gegevensobject
 {
-    Entiteitgegevensobject gegevens;
+    EntiteitgegevensobjectBaseclass gegevens;
 }
 
 // nodig? kan formeel of materieel zijn...
